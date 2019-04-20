@@ -189,4 +189,18 @@ let cityMetrics = [
 	"Detroit, MI", { "happiness": 29.19, "wellbeing": 181, "income_and_employment": 181, "community_and_environment": 181 }
 ];
 
+$("#happy-button").on("click", function(beHappier){
+    beHappier.preventDefault();
+
+    //Take in the user input
+    var happyOne = $("#happy").val().trim();
+
+    console.log(happyOne);
+    alert("You have a happiness level of " + happyOne);
+
+    var rightCity = Math.abs((cityMetrics[1].happiness)-happyOne);
+    console.log(rightCity);
+
+});
+
 console.log(cityMetrics[0], cityMetrics[1].happiness);

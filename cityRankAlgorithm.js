@@ -45,8 +45,11 @@ $("#happy-button").on("click", function(beHappier){
 		console.log(keyA);
 		console.log(keyB);
 
-		let distanceA = a[keyA].distance;
-		let distanceB = b[keyB].distance; 
+		let distanceA = Number(a[keyA].distance);
+		let distanceB = Number(b[keyB].distance); 
+
+		console.log(typeof(distanceA));
+		console.log(typeof(distanceB));
 
 		console.log("distanceA", distanceA);
 		console.log("distanceB", distanceB);
